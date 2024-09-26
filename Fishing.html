@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Portfolio of Nils Carron - Fishing</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+</head>
+<body class="subpage">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header">
+            <div class="container">
+                <div class="col-12">
+                    <h1><a href="index.html" id="logo">Nils Carron</a></h1>
+                </div>
+                <div class="row flex-header">
+
+                    <div class="col-12">
+                        <!-- Logo -->
+                        <nav id="nav">
+                            <a href="2024projects.html">2024 projects</a>
+                            <a href="2023projects.html">2023 projects</a>
+                            <a href="2022projects.html">2022 projects</a>
+                            <a href="2021projects.html">2021 projects</a>
+                            <a href="2020projects.html">2020 projects</a>
+                            <a href="2019projects.html">2019 projects</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 col-12-medium">
+
+                        <!-- Main Content -->
+                        <section>
+                            <header>
+                                <h2>Fishing</h2>
+                                <h3>The largest and final VR project I developed at H'ability</h3>
+                            </header>
+                            <p><strong>Fishing</strong> is the largest and final project I developed at H'ability. It is a VR experience designed to help patients exercise their upper body. The patient has to bait their hook, cast the rod towards the fish, tire the fish out, reel it in, and place it either in a bucket or a trash bin, depending on what they caught.</p>
+                            <a href="#" class="bordered-feature-image"><img src="images/Fishing.png" alt="Fishing Game Image" /></a>
+                            <p>With so many interactions, the development was long, and I had to account for many potential issues: the player performing actions out of order, the hook getting stuck, and more. I also focused heavily on the game's visual and physical aspects. Since <strong>Fishing</strong> was a highly requested game, I put special effort into making it feel as responsive and realistic as possible.</p>
+                            <a href="#" class="bordered-feature-image"><img src="images/FishingRope.gif" alt="Fishing Line System" /></a>
+                            <p>First, I created rendering systems for the fishing line to make it visually realistic and pleasing. This involved either using advanced math or Unity's physics engine. I particularly relied on the joint system to create coherent interactions between the scene's elements. The reel spins, the hook casts, and the line stretches – the result is quite satisfying.</p>
+                            <a href="#" class="bordered-feature-image"><img src="images/FishingReel.gif" alt="Fishing Reel System" /></a>
+                            <p>I also added Easter eggs to the game to make the experience more unexpected and rewarding for the patient. Additionally, I created a new water shader to help indicate where the fish to be caught are located.</p>
+                            <a href="#" class="bordered-feature-image"><img src="images/FishingWater.gif" alt="Water Shader System" /></a>
+                            <p>I utilized the emission system to highlight interactable elements for the player. Once again, I faced optimization challenges due to the large environment, water shader (the same one used in <a href="Banquise.html">Tilted ice Floe</a>), and heavy use of physics in a VR environment.</p>
+
+                            <div class="row">
+										<div class="col-2 col-4-medium col-6-small">
+											<a href="https://unity.com/" class="bordered-feature-image"><img src="images/Unity3D_Logo.jpg" alt="Unity logo" /></a>
+										</div>
+										<div class="col-2 col-4-medium col-6-small">
+											<a href="https://git-scm.com/" class="bordered-feature-image"><img src="images/git.png" alt="Git logo" /></a>
+										</div>
+										<div class="col-2 col-4-medium col-6-small">
+											<a href="https://www.blender.org/" class="bordered-feature-image"><img src="images/Blender_logo.png" alt="Blender logo" /></a>
+										</div>
+									</div>
+                        </section>
+
+                    </div>
+                    <div class="col-3 col-12-medium">
+
+                        <!-- Sidebar -->
+                        <section>
+                            <header>
+                                <h2>Other Projects</h2>
+                            </header>
+                            <ul class="link-list">
+                                <li><a href="Nightmare.html">Nightmare</a></li>
+                                <li><a href="SquatVR.html">SquatVR</a></li>
+                                <li><a href="Crab.html">Crab</a></li>
+                                <li><a href="ShoalOfFish.html">Shoal of Fish</a></li>
+                                <li><a href="PrehistoricCave.html">Prehistoric Cave</a></li>
+                            </ul>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-12-medium">
+                        <!-- Footer Content -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
