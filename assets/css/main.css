@@ -1457,21 +1457,44 @@ input, select, textarea {
 		.feature-image img {
 			display: block;
 			width: 100%;
+
 		}
 
-	.bordered-feature-image {
-		display: block;
-		background: #fff url("images/bg04.png");
-		padding: 10px;
-		box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.15);
-		margin: 0 0 1.5em 0;
-		outline: 0;
-	}
-
+	..bordered-feature-image {
+    display: block;
+    width: 100%;
+  
+    height: auto;
+    margin: 0 auto;
+    border: 2px solid #ddd; /* Si vous avez une bordure sur les images */
+}
 		.bordered-feature-image img {
 			display: block;
 			width: 100%;
 		}
+		.bordered-feature-image iframe {
+   		 width: 100%; 
+    		height: auto;
+		}
+/* Container qui garde le ratio d'aspect 16:9 pour la vidéo */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1780px; /* Même largeur que l'image précédente */
+    padding-bottom: 56.25%; /* Cela crée un ratio de 16:9 (hauteur/largeur * 100) */
+    height: 0;
+    margin: 0 auto;
+    border: 2px solid #ddd; /* Bordure optionnelle pour correspondre aux images */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 	.button-large {
 		background-image: -moz-linear-gradient(top, #ed391b, #ce1a00);
